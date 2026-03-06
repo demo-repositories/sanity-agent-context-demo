@@ -1,0 +1,12 @@
+{
+  "name": "sanity-agent-context-demo",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"pnpm --filter studio dev\" \"pnpm --filter app dev\"",
+    "build": "pnpm --filter app build",
+    "import-sample-data": "pnpm --filter studio import-sample-data"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}

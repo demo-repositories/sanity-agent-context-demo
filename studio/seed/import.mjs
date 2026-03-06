@@ -4,13 +4,13 @@ const client = createClient({
   projectId: 'yfkwnwo8',
   dataset: 'production',
   apiVersion: '2024-01-01',
-  token: process.env.AGENT_CONTEXT_TOKEN,
+  token: process.env.SANITY_WRITE_TOKEN,
   useCdn: false,
 })
 
-if (!process.env.AGENT_CONTEXT_TOKEN) {
-  console.error('Error: AGENT_CONTEXT_TOKEN environment variable is required.')
-  console.error('Set it with: export AGENT_CONTEXT_TOKEN=<your-sanity-write-token>')
+if (!process.env.SANITY_WRITE_TOKEN) {
+  console.error('Error: SANITY_WRITE_TOKEN environment variable is required.')
+  console.error('Set it with: export SANITY_WRITE_TOKEN=<your-sanity-write-token>')
   process.exit(1)
 }
 

@@ -8,8 +8,9 @@
     "import-sample-data": "node seed/import.mjs"
   },
   "dependencies": {
-    "@sanity/agent-context": "latest",
+    "@sanity/agent-context": "0.3.4",
     "@sanity/client": "^7.16.0",
+    "@sanity/ui": "^2.16.22",
     "@sanity/vision": "^3.72.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
